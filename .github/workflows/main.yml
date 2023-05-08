@@ -1,0 +1,14 @@
+name: Juveria
+run-name: ${{user.name}} is running first workflow.
+on: [push]
+jobs:
+  Explore-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "First step done"
+  Explore-jobs:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: chekout
+        uses: actions/checkout@v2
+    
